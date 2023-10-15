@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/104a8651-305e-446f-8013-99f59f51b815/dfzwssp-61a6aef8-d1dc-48f0-a8c9-c6378307d0de.png/v1/fill/w_1280,h_1932,q_80,strp/silver_wolf___honkai__star_rail_by_aiartshines_dfzwssp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkzMiIsInBhdGgiOiJcL2ZcLzEwNGE4NjUxLTMwNWUtNDQ2Zi04MDEzLTk5ZjU5ZjUxYjgxNVwvZGZ6d3NzcC02MWE2YWVmOC1kMWRjLTQ4ZjAtYThjOS1jNjM3ODMwN2QwZGUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NSPitOFyBlZREogxdhqhgYU28Pk42pHMTl-A3Pg_g_M'); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover;
+    background-position: center -70px;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #603ac9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
