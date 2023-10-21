@@ -1,7 +1,11 @@
 
 body {
+    background-color: #000000;
+    overflow: hidden;
+
+
     font-family: Arial, sans-serif;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/104a8651-305e-446f-8013-99f59f51b815/dfzwssp-61a6aef8-d1dc-48f0-a8c9-c6378307d0de.png/v1/fill/w_1280,h_1932,q_80,strp/silver_wolf___honkai__star_rail_by_aiartshines_dfzwssp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkzMiIsInBhdGgiOiJcL2ZcLzEwNGE4NjUxLTMwNWUtNDQ2Zi04MDEzLTk5ZjU5ZjUxYjgxNVwvZGZ6d3NzcC02MWE2YWVmOC1kMWRjLTQ4ZjAtYThjOS1jNjM3ODMwN2QwZGUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NSPitOFyBlZREogxdhqhgYU28Pk42pHMTl-A3Pg_g_M'); /* Substitua pelo caminho real da sua imagem */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/104a8651-305e-446f-8013-99f59f51b815/dfzwssp-61a6aef8-d1dc-48f0-a8c9-c6378307d0de.png/v1/fill/w_1280,h_1932,q_80,strp/silver_wolf___honkai__star_rail_by_aiartshines_dfzwssp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkzMiIsInBhdGgiOiJcL2ZcLzEwNGE4NjUxLTMwNWUtNDQ2Zi04MDEzLTk5ZjU5ZjUxYjgxNVwvZGZ6d3NzcC02MWE2YWVmOC1kMWRjLTQ4ZjAtYThjOS1jNjM3ODMwN2QwZGUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NSPitOFyBlZREogxdhqhgYU28Pk42pHMTl-A3Pg_g_M'); 
     background-size: cover;
     background-position: center -70px;
     background-repeat: no-repeat;
@@ -14,11 +18,12 @@ body {
 
 form {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    backdrop-filter: blur(15px);
 }
 
 input {
@@ -28,17 +33,109 @@ input {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
 }
 
-button {
-    background-color: #603ac9;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+.button:hover {
+    background-color: #42cdda
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.button {
+    background-color: #c325f7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
     cursor: pointer;
+    margin: 0 !important;
 }
 
-button:hover {
-    background-color: #45a049;
+input:focus {
+    border-color: #f500bc; 
+    box-shadow: 0 0 5px rgba(159, 0, 245, 0.5);
+}
+
+
+.shutter[data-v-7461cf20] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(225, 0, 255);
+    z-index: 9999;
+    -webkit-animation: byeShutter-data-v-7461cf20 2s forwards;
+    animation: byeShutter-data-v-7461cf20 2s forwards
+}
+
+.shutter[data-v-7461cf20]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #000000;
+    width: 0;
+    height: 3px;
+    -webkit-animation: shutterOpen-data-v-7461cf20 2s forwards;
+
+}
+
+
+@keyframes byeShutter-data-v-7461cf20 {
+    80% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        z-index: -1
+    }
+}
+
+@-webkit-keyframes shutterOpen-data-v-7461cf20 {
+    0% {
+        width: 0;
+        height: 1px
+    }
+
+    to {
+        width: 100%;
+        height: 100%
+    }
+}
+
+@keyframes shutterOpen-data-v-7461cf20 {
+    0% {
+        width: 0;
+        height: 1px
+    }
+
+    50% {
+        width: 100%;
+        height: 1px
+    }
+
+    90% {
+        width: 100%;
+        height: 100%
+    }
+
+    to {
+        width: 100%;
+        height: 100%
+    }
 }
