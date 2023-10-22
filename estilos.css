@@ -77,10 +77,13 @@ input:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(225, 0, 255);
     z-index: 9999;
+    background-image: url('https://pbs.twimg.com/media/Fx_NmLKX0AAbLKS?format=jpg&name=large'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajuste conforme necessário */
+    background-position: center; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
     -webkit-animation: byeShutter-data-v-7461cf20 2s forwards;
-    animation: byeShutter-data-v-7461cf20 2s forwards
+    animation: byeShutter-data-v-7461cf20 2s forwards;
 }
 
 .shutter[data-v-7461cf20]:before {
@@ -90,11 +93,11 @@ input:focus {
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: #000000;
+    background: linear-gradient(to right, #8a3ab9, #2b49ef); /* Gradiente de roxo para azul */
     width: 0;
     height: 3px;
     -webkit-animation: shutterOpen-data-v-7461cf20 2s forwards;
-
+    animation: shutterOpen-data-v-7461cf20 2s forwards;
 }
 
 
@@ -146,14 +149,20 @@ input:focus {
 
 #checkbox {
     position: absolute;
-    margin: 53px -156px;
+    margin:53px -290px; 
 }
 
 #lembre {
     position: absolute;
     color: var(--cor4);
-    margin: 51px 10px;
+    margin:51px 31px; 
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
-
 }
+
+#checkbox:checked {
+    background-color: #e91e63; 
+    border-color: #e91e63;
+}
+
+
