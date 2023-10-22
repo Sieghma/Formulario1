@@ -40,7 +40,7 @@ input {
     background: #00000040;
 }
 
-.button:hover {
+.button:hover { box-shadow: 0 0 80px rgba(29, 42, 180, 0.8);
     background-color: #42cdda
 }
 
@@ -65,7 +65,7 @@ main::after {
     margin: 0 !important;
 }
 
-input:focus {
+.shadow:focus {
     border-color: #f500bc; 
     box-shadow: 0 0 5px rgba(159, 0, 245, 0.5);
 }
@@ -78,9 +78,9 @@ input:focus {
     right: 0;
     bottom: 0;
     z-index: 9999;
-    background-image: url('https://pbs.twimg.com/media/Fx_NmLKX0AAbLKS?format=jpg&name=large'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Ajuste conforme necessário */
-    background-position: center; /* Ajuste conforme necessário */
+    background-image: url('https://pbs.twimg.com/media/Fx_NmLKX0AAbLKS?format=jpg&name=large'); /
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
     -webkit-animation: byeShutter-data-v-7461cf20 2s forwards;
     animation: byeShutter-data-v-7461cf20 2s forwards;
@@ -94,6 +94,7 @@ input:focus {
     bottom: 0;
     margin: auto;
     background: linear-gradient(to right, #8a3ab9, #2b49ef); /* Gradiente de roxo para azul */
+    box-shadow: 0 0 450px rgba(232, 73, 243, 0.8);
     width: 0;
     height: 3px;
     -webkit-animation: shutterOpen-data-v-7461cf20 2s forwards;
@@ -101,7 +102,7 @@ input:focus {
 }
 
 
-@keyframes byeShutter-data-v-7461cf20 {
+@keyframes byeShutter-data-v-7461cf20 { 
     40% {
         opacity: 1
     }
@@ -119,14 +120,14 @@ input:focus {
         height: 1px
     }
 
-    to {
+    to { 
         width: 100%;
         height: 100%
     }
 }
 
-@keyframes shutterOpen-data-v-7461cf20 {
-    0% {
+@keyframes shutterOpen-data-v-7461cf20 { 
+    0% { 
         width: 0;
         height: 1px
     }
@@ -147,22 +148,23 @@ input:focus {
     }
 }
 
-#checkbox {
+#checkbox { 
     position: absolute;
-    margin:53px -290px; 
+    margin:53px -263px; 
 }
 
 #lembre {
     position: absolute;
     color: var(--cor4);
-    margin:51px 31px; 
+    margin:51px 20px; 
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
 }
 
-#checkbox:checked {
-    background-color: #e91e63; 
-    border-color: #e91e63;
+input[type='checkbox'] {
+    accent-color: rgb(190, 50, 197);
 }
 
 
+
+ 
